@@ -9,7 +9,7 @@ jobs:
     steps:
       -uses: actions/checkout@v2
       -run: echo "Dragos Mihai Simion"
-      -run: gcc -o suma
+      -run: gcc -o suma src/suma.c
       -run: ./suma 69 11
       -run: ./suma 2 3
       -run: ./suma 18 10
