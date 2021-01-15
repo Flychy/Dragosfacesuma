@@ -1,9 +1,9 @@
 name: Ronaldo
 on: push
 jobs:
-  buid:
+  build:
     runs-on: ubuntu-latest
-    stratehy: 
+    strategy: 
       matrix:
         compiler: [gcc]
     steps:
