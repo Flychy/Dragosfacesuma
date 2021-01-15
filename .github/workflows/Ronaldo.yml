@@ -1,0 +1,28 @@
+name: Ronaldo
+on: push
+jobs:
+  buid:
+    runs-on: ubuntu-latest
+    stratehy: 
+      matrix:
+        compiler: [gcc]
+    steps:
+      -uses: actions/checkout@v2
+      -run: echo "Dragos Mihai Simion"
+      -run: gcc -o suma
+      -run: ./suma 69 11
+      -run: ./suma 2 3
+      -run: ./suma 18 10
+      -run: |
+      if [ "$(./suma 69 11" != "80"] 
+        then
+          exit 1
+      fi
+      if [ "$(./suma 2 3" != "5"] 
+        then
+          exit 1
+      fi
+      if [ "$(./suma 18 10" != "28"] 
+        then
+          exit 1
+      fi
