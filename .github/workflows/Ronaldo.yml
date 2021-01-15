@@ -14,15 +14,15 @@ jobs:
       -run: ./suma 2 3
       -run: ./suma 18 10
       -run: |
-      if [ "$(./suma 69 11" != "80"] 
-        then
-          exit 1
-      fi
-      if [ "$(./suma 2 3" != "5"] 
-        then
-          exit 1
-      fi
-      if [ "$(./suma 18 10" != "28"] 
-        then
-          exit 1
-      fi
+            if [ "$(./suma 69 11" != "80"] 
+              then
+                exit 1
+            fi
+            if [ "$(./suma 2 3" != "5"] 
+              then
+                exit 1
+            fi
+            if [ "$(./suma 18 10" != "28"] 
+              then
+                exit 1
+            fi
